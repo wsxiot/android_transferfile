@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 文件夹,文件,文件夹和文件 -->
+    <group android:id="@+id/group1" >
+        <item
+            android:id="@+id/shuaxin"
+            android:orderInCategory="2"
+            android:title="刷新列表"/>
+        <item
+            android:id="@+id/fuzhi"
+            android:orderInCategory="3"
+            android:title="复制"/>
+        <item
+            android:id="@+id/shanchu"
+            android:orderInCategory="4"
+            android:title="删除"/>
+        <item
+            android:id="@+id/youchuan"
+            android:orderInCategory="6"
+            android:title="有网传输"/>
+        <item
+            android:id="@+id/xinjian"
+            android:orderInCategory="7"
+            android:title="新建文件夹"/>
+        <item
+            android:id="@+id/zhantie"
+            android:orderInCategory="8"
+            android:title="粘贴"/>
+         <item
+            android:id="@+id/youshou"
+            android:orderInCategory="9"
+            android:title="有网接收"/>
+    </group>
+
+    <!-- 文件夹,文件  都是一个 -->
+    <group android:id="@+id/group2" >
+        <item
+            android:id="@+id/chongmingming"
+            android:orderInCategory="9"
+            android:title="重命名"/>
+        <item
+            android:id="@+id/xiangxi"
+            android:orderInCategory="10"
+            android:title="详细信息"/>
+    </group>
+
+    <item
+        android:id="@+id/guanyu"
+        android:orderInCategory="12"
+        android:title="关于"/>
+
+</menu>

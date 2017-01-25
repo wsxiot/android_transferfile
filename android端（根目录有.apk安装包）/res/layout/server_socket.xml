@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="10dip">
+
+	
+	<Button android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" android:text="选择发送文件"
+	    android:onClick="onButtonCelectSendFile"/>
+	
+	<Button android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" android:text="开始/继续发送"
+	    android:onClick="onButtonSendFile"/>	    	
+	    
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="暂停发送"
+		android:onClick="onButtonClicked" />
+	
+	
+	<ListView android:id="@+id/android:list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+
+</LinearLayout>

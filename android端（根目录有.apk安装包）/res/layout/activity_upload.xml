@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="10dip">
+	<TextView
+     	android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+	<TextView
+     	android:id="@+id/info2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFD700"
+        android:text="--------------WIFI传输模式----------------"/>
+        
+        <TableRow >
+             <Button
+                android:id="@+id/connectwifihot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="接收文件"/>      
+             <Button
+                android:id="@+id/openwifihot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="选择发送文件"/>                
+        </TableRow>
+        
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFD700"
+        android:text="----------蓝牙传输模式-------------"/>
+        
+        <TableRow >
+             <Button
+                android:id="@+id/Bluetoothrecievefile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onOpenClientSocketButtonClicked"
+                android:text="蓝牙接收文件"/> 
+             <Button
+                android:id="@+id/Bluetoothupload"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onOpenServerSocketButtonClicked"   
+                android:text="蓝牙发送文件"/>                       
+        </TableRow>
+        
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFD700"
+        android:text="----------对电脑传输----------"/>
+        <Button
+           android:id="@+id/sendtopc"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:onClick="senttopcButtonClicked"   
+           android:text="向电脑端发送文件"/>
+    </TableLayout>
+
+</LinearLayout>

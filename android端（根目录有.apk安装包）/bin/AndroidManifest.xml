@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testtab"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    
+    
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.testtab.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.testtab.BrowerActivity"
+            android:label="@string/title_activity_index" >
+        </activity>
+        <activity
+            android:name="com.example.testtab.MiddleActivity"
+            android:label="@string/title_activity_middle" >
+        </activity>
+        <activity
+            android:name="com.example.testtab.LastActivity"
+            android:label="@string/title_activity_last" >
+        </activity>
+        
+        <activity android:label="面对面传输" android:name="com.example.bigfiletp.UploadActivity"/>
+        <activity android:label="文件浏览器" android:name="com.example.bigfiletp.FileBrowserActivity"/>
+        <activity android:label="蓝牙客户端" android:name="bluetoothtp.ClientSocketActivity"/>
+        <activity android:label="设备列表" android:name="bluetoothtp.DiscoveryActivity"/>
+        <activity android:label="蓝牙服务器" android:name="bluetoothtp.ServerSocketActivity"/>
+        <activity android:label="向电脑发送文件" android:name="com.example.bigfiletp.PcServerActivity"/>
+        
+    </application>
+    
+    <!-- 还没设置wifi 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
+    
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+    
+    <!-- 修改网络状态的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 修改wifi状态的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问wifi权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 访问网络状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    
+
+</manifest>
